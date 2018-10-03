@@ -64,7 +64,7 @@ class Owner
     self.pets.each {|type, pets| 
       
       case counter
-      when 0..1 
+      when 1 
         retString << ","
       when 2 
         retString << ", and"
