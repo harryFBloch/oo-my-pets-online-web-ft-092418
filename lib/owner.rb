@@ -69,6 +69,7 @@ class Owner
       when 2 
         retString << ", and"
       end
+      counter += 1
     }
     retString
   end
