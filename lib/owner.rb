@@ -38,6 +38,10 @@ class Owner
     self.pets[:dogs] << Dog.new(name)
   end
   
+  def walk_dogs
+    
+  end
+  
   
   private
   def species=(species)
