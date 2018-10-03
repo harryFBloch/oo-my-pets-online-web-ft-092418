@@ -59,11 +59,12 @@ class Owner
   end
   
   def list_pets
-    retString = "I have"
+    retString = "I have "
     self.pets.each {|type, pets| 
     binding.pry
       retString << "#{pets.length} #{type},"
     }
+    retString
   end
   
   private
