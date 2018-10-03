@@ -12,6 +12,6 @@ class Owner
   end
   
   def self.reset_all
-    @@all = 0 
+    @@all = []
   end
 end
