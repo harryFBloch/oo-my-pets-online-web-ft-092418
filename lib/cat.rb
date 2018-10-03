@@ -4,6 +4,8 @@ class Cat
   def initialize(name)
     self.name = name
   end
+  
+  
   private
   
   def name=(name)
