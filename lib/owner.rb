@@ -62,7 +62,7 @@ class Owner
     retString = "I have"
     counter = 0
     self.pets.each {|type, pets| 
-      retString << " #{pets.length} #{type}"
+      
       case counter
       when 0..1 
         retString << ","
@@ -70,6 +70,7 @@ class Owner
         retString << ", and"
       end
       counter += 1
+      retString << " #{pets.length} #{type}"
     }
     retString
   end
