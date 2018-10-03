@@ -4,7 +4,7 @@ class Owner
   @@all = []
   
   def initialize(name)
-    self.pets = []
+    self.pets = {fishes: [], dogs: [],cats: []}
     self.name = name
     self.species = "human"
     @@all << self
