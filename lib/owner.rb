@@ -57,6 +57,13 @@ class Owner
     }
   end
   
+  def list_pets
+    retString = "I have"
+    self.pets.each {|type, pets| 
+      retString << "#{pets.length} #{type},"
+    }
+  end
+  
   private
   def species=(species)
     @species = species
