@@ -74,7 +74,7 @@ class Owner
         petType = "cat(s)"
       end
       counter += 1
-      retString << " #{pets.length} #{type}"
+      retString << " #{pets.length} #{petType}"
     }
     retString
   end
