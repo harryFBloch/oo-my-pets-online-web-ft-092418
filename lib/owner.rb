@@ -20,4 +20,9 @@ class Owner
   def self.count
     @@all.length
   end
+  
+  private
+  def species=(species)
+    @species = species
+  end
 end
