@@ -62,7 +62,7 @@ class Owner
     retString = "I have"
     counter = 0
     self.pets.each {|type, pets| 
-      
+      petType = ""
       case counter
       when 1 
         retString << ","
