@@ -60,8 +60,10 @@ class Owner
   
   def list_pets
     retString = "I have"
+    counter = 0
     self.pets.each {|type, pets| 
-      retString << " #{pets.length} #{type},"
+      retString << " #{pets.length} #{type}"
+      case counter
     }
     retString
   end
