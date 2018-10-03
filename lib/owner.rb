@@ -60,6 +60,7 @@ class Owner
   def list_pets
     retString = "I have"
     self.pets.each {|type, pets| 
+    binding.pry
       retString << "#{pets.length} #{type},"
     }
   end
