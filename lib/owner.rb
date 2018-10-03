@@ -64,10 +64,14 @@ class Owner
     self.pets.each {|type, pets| 
       petType = ""
       case counter
+      when 0
+        petType = "fish"
       when 1 
         retString << ","
+        petType = "dog(s)"
       when 2 
         retString << ", and"
+        petType = "cat(s)"
       end
       counter += 1
       retString << " #{pets.length} #{type}"
