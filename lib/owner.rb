@@ -64,10 +64,11 @@ class Owner
     self.pets.each {|type, pets| 
       retString << " #{pets.length} #{type}"
       case counter
-      when 0 
-        when 1 
-          when 2 
-            
+      when 0..1 
+        retString << ","
+      when 2 
+        retString << ", and"
+      end
     }
     retString
   end
