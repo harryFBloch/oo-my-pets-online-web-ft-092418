@@ -76,6 +76,7 @@ class Owner
       counter += 1
       retString << " #{pets.length} #{petType}"
     }
+    retString << "."
     retString
   end
   
