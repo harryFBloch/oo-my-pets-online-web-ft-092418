@@ -59,9 +59,9 @@ class Owner
   end
   
   def list_pets
-    retString = "I have "
+    retString = "I have"
     self.pets.each {|type, pets| 
-      retString << "#{pets.length} #{type},"
+      retString << " #{pets.length} #{type},"
     }
     retString
   end
